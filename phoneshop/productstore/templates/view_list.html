@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+
+{%block body_block%}
+
+<div class="col-4"></div>
+
+
+    <div class="card" style="width: 18rem;">
+  <div class="card-header" style="background-color: #ff33b0;">
+      <h5 class="card-title text-white">{{phone.phone_name}}</h5>
+      <img src="{{phone.image.url}}" class="card-img-top" alt="..."height="300px">
+
+  </div>
+  <ul class="list-group list-group-flush">
+
+    <li class="list-group-item"><i class="fas fa-microchip"></i>Processor:{{phone.processor}}</li>
+    <li class="list-group-item"><i class="fas fa-memory"></i> RAM: {{phone.ram}}</li>
+    <li class="list-group-item"><i class="fas fa-money-check"></i> prize: {{phone.price}}</li>
+  </ul>
+</div>
+
+{%endblock%}

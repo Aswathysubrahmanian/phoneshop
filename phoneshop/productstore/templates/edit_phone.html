@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%block body_block%}
+
+ <div class="col-3"></div>
+    <div class="col-6">
+        <form action="" method="POST" enctype="multipart/form-data">
+                {%csrf_token%}
+                {{form.as_p}}
+                <div class="mb-3 d-grid gap-2 col-6 mx-auto"><input type="submit" value="EDIT" class="btn btn-success btn-lg"></div>
+            </form>
+    </div>
+    <div class="col-3"></div>
+
+
+{%endblock%}
